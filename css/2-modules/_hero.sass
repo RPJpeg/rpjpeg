@@ -1,0 +1,46 @@
+.hero
+  width: 100%
+  background-color: white
+  height: 450px
+  margin-bottom: 150px
+  box-shadow: 0 0 6px $light-grey
+  @include bp-medium
+    height: 360px
+    margin-bottom: 125px
+  @include bp-small
+    margin-bottom: 100px
+  .hero-box
+    width: 100%
+    height: 100%
+    background-image: url("../images/hero-image.png")
+    background-position: right bottom
+    background-repeat: no-repeat
+    background-size: contain
+    position: relative
+    @include bp-small
+      background-size: cover
+    .title-box
+      width: 400px
+      height: 200px
+      position: absolute
+      top: 24%
+      left: 10%
+      @include bp-medium
+        left: 6%
+      @include bp-small
+        width: 100%
+        top: 25%
+        left: 0
+        background-color: rgba(255,255,255,0.8)
+      h1
+        color: $orange
+        text-align: center
+        margin-top: 34px
+      h3
+        color: $dark-grey
+        text-align: center
+    .bottom-border
+      border-bottom: 1px solid $grey
+      padding: 8px
+      margin: 0 auto 10px auto
+      width: 75%

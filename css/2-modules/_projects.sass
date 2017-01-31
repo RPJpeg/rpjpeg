@@ -1,0 +1,80 @@
+section
+  margin-bottom: 150px
+  @include bp-medium
+    margin-bottom: 125px
+  @include bp-small
+    margin-bottom: 100px
+  h2
+    color: $orange
+    text-align: center
+    margin-bottom: 80px
+  .image-grid
+    padding: 1.2vw
+    flex-flow: row wrap
+    flex-direction: row
+    justify-content: center
+    display: flex
+    @include bp-medium
+      padding: 2.5vw
+    .box
+      background-color: $off-black
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      flex: auto
+      width: 300px
+      max-width: 300px
+      height: 320px
+      margin: 1.2vw
+      overflow: hidden
+      box-shadow: 0 2px 8px $dark-grey
+      @include transition(.1s)
+      &:hover
+        transform: scale(1.05)
+        box-shadow: 0 4px 24px $dark-grey
+      @include bp-medium
+        margin: 2.5vw
+      @include bp-small
+      .box-top
+        width: 100%
+        height: 85%
+        margin: 0
+        padding: 0
+        display: flex
+        align-items: center
+        justify-content: center
+        h4
+          color: $white
+          text-align: center
+          padding: 12px
+      .box-footer
+        width: 100%
+        height: 15%
+        margin: 0
+        padding: 0
+        background-color: $white
+        .box-title
+          @include font-size(10px)
+          color: $dark-grey
+          padding: 18px 12px
+          float: left
+        .project-tag
+          float: right
+          color: $light-orange
+          padding: 4px
+          border: 1px solid $light-orange
+          margin: 13px 4px
+          @include font-size(8px)
+          transform: translateX(-8px)
+      .box1
+        background-image: url("../images/ux-mountain-thumb.png")
+      .box2
+        background-image: url("../images/profile-template-thumb.png")
+      .box3
+        background-image: url("../images/wedding-thumb.png")
+      .box4
+        background-image: url("../images/preston-thumb.png")
+      .box5
+        background-image: url("../images/mt-vernon-rehab-assoc-thumb.png")
+      .box6
+        background-image: url("../images/tech-startup-thumb.png")

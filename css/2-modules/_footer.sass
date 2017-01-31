@@ -1,0 +1,78 @@
+footer
+  width: 100%
+  height: 525px
+  background-color: $blue
+  h2
+    color: $lightest-grey
+    font-weight: 100
+    letter-spacing: 1.5px
+    padding: 110px 0 0 110px
+    margin-left: 10%
+  .footer-wrap
+    position: relative
+  .quotes-left
+    position: absolute
+    color: $dark-blue
+    font-family: 'Passion One', cursive
+    left: 150px
+    top: -90px
+    transform: rotate(180deg)
+    @include font-size(200px)
+  .quotes-right
+    position: absolute
+    color: $dark-blue
+    font-family: 'Passion One', cursive
+    right: 300px
+    top: 160px
+    @include font-size(200px)
+  h5
+    color: $grey
+    opacity: 0.4
+    font-weight: 200
+    text-align: right
+    margin-right: 35%
+  h3
+    color: $lightest-grey
+    padding-left: 110px
+    margin-left: 10%
+    margin-top: 50px
+  span
+    font-family: 'Raleway', sans-serif
+    letter-spacing: 1.5px
+    font-weight: 200
+    color: $orange
+
+.sub-footer
+  width: 100%
+  height: 50px
+  background-color: $dark-blue
+  margin: 0
+  p
+    color: $lightest-blue
+    float: left
+    padding: 14px
+    @include transition(.1s)
+  a
+    color: $lightest-blue
+    padding: 12px
+    @include transition(.1s)
+    &:hover
+      color: $off-white
+    &:active
+      opacity: 0.6
+  i
+    padding: 10px 8px
+  ul
+    float: right
+    li
+      list-style: none
+      display: inline
+      color: $lightest-blue
+      padding: 15px 0
+      @include transition(.1s)
+      &:hover
+        color: $off-white
+      &:active
+        opacity: 0.6
+  .fa-file-pdf-o
+    transform: scale(0.8)
