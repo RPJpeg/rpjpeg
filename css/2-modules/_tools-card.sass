@@ -1,0 +1,35 @@
+.tools-card
+  height: 500px
+  @include bp-medium
+    height: 450px
+  @include bp-small
+    height: 865px
+  h3
+    color: $orange
+    padding-bottom: 18px
+  h4
+    color: $dark-grey
+    padding: 18px 0
+  .card-title
+    color: $off-white
+    padding: 12px 32px
+    margin-top: 30px
+    background-color: $light-blue
+    transform: translateY(30px)
+  .tools-row
+    width: 100%
+    transform: translateY(30px)
+    height: 80%
+    .tools-col1, .tools-col2, .tools-col3
+      float: left
+      width: 33%
+      padding: 30px
+      .fa
+        padding-right: 12px
+        @include bp-medium
+          padding-right: 6px
+      @include bp-small
+        float: none
+        width: 100%
+    .tools-col3
+      @include clearfix

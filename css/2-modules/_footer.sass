@@ -1,74 +1,104 @@
 footer
   width: 100%
-  height: 525px
+  height: 465px
   background-color: $blue
-  h2
-    color: $lightest-grey
-    font-weight: 100
-    letter-spacing: 1.5px
-    padding: 110px 0 0 110px
-    margin-left: 10%
-  .footer-wrap
+  @include bp-medium
+    height: 420px
+  @include bp-small
+    height: 500px
+  .footer-box
+    margin: 30px auto
+    width: 65%
     position: relative
-  .quotes-left
-    position: absolute
-    color: $dark-blue
-    font-family: 'Passion One', cursive
-    left: 150px
-    top: -90px
-    transform: rotate(180deg)
-    @include font-size(200px)
-  .quotes-right
-    position: absolute
-    color: $dark-blue
-    font-family: 'Passion One', cursive
-    right: 300px
-    top: 160px
-    @include font-size(200px)
-  h5
-    color: $grey
-    opacity: 0.4
-    font-weight: 200
-    text-align: right
-    margin-right: 35%
-  h3
-    color: $lightest-grey
-    padding-left: 110px
-    margin-left: 10%
-    margin-top: 50px
-  span
-    font-family: 'Raleway', sans-serif
-    letter-spacing: 1.5px
-    font-weight: 200
-    color: $orange
+    @include bp-medium
+      width: 75%
+    @include bp-small
+      width: 90%
+    h2
+      color: $lightest-grey
+      font-weight: 100
+      letter-spacing: 1.5px
+      padding: 60px 0 20px 0
+      position: relative
+      width: 72%
+      z-index: 20
+      @include bp-medium
+        width: 80%
+      @include bp-small
+        width: 85%
+    .quotes-left
+      color: $dark-blue
+      font-family: 'Passion One', cursive
+      @include font-size(185px)
+      position: absolute
+      top: -80px
+      left: -40px
+      z-index: 10
+      opacity: 0.5
+      transform: rotate(180deg)
+      @include bp-small
+        left: -5px
+    .quotes-right
+      color: $dark-blue
+      font-family: 'Passion One', cursive
+      @include font-size(185px)
+      position: absolute
+      bottom: 80px
+      right: 200px
+      z-index: 10
+      opacity: 0.5
+      @include bp-medium
+        right: 0
+        bottom: 65px
+      @include bp-small
+        right: 50px
+    h5
+      color: $grey
+      opacity: 0.4
+      font-weight: 200
+      text-align: right
+      position: relative
+      @include bp-small
+        transform: translateY(12px)
+    .home-h3
+      color: $lightest-grey
+      padding: 30px 0
+    span
+      font-family: 'Raleway', sans-serif
+      letter-spacing: 1.5px
+      font-weight: 200
+      color: $orange
 
 .sub-footer
   width: 100%
-  height: 50px
+  height: 60px
   background-color: $dark-blue
   margin: 0
   p
     color: $lightest-blue
     float: left
-    padding: 14px
+    padding: 14px 0 0 12px
     @include transition(.1s)
   a
     color: $lightest-blue
-    padding: 12px
     @include transition(.1s)
     &:hover
       color: $off-white
     &:active
       opacity: 0.6
-  i
-    padding: 10px 8px
+  .fa
+    padding: 14px 0 0 10px
+  .fa-arrow-up
+    transform: translateX(-10px)
+    padding-top: 10px
   ul
     float: right
+    @include bp-small
+      margin-right: 12px
     li
       list-style: none
       display: inline
       color: $lightest-blue
-      padding: 15px 0
       @include transition(.1s)
       &:hover
         color: $off-white
@@ -76,3 +106,8 @@ footer
         opacity: 0.6
   .fa-file-pdf-o
     transform: scale(0.8)
+.skills-footer
+  height: 265px
+.skills-h3
+  color: $lightest-grey
+  padding: 85px 0
