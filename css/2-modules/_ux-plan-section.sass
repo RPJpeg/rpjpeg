@@ -1,0 +1,76 @@
+.ux-plan-section
+  width: 100%
+  margin-bottom: 100px
+  .explanations
+    margin-top: 50px
+    @include bp-small
+      margin-top: 40px
+    @include clearfix
+    .explain-left
+      width: 50%
+      float: left
+      padding: 20px
+      @include bp-small
+        float: none
+        width: 100%
+    .explain-right
+      width: 50%
+      float: right
+      padding: 20px
+      @include bp-small
+        float: none
+        width: 100%
+      @include clearfix
+    p
+      color: $dark-grey
+      padding-bottom: 50px
+      text-align: justify
+    .img-container
+      width: 95%
+      margin: 0 auto
+      img
+        width: 100%
+        box-shadow: 0 2px 2px $grey
+        margin-bottom: 46px
+        @include transition(.1s)
+        &:hover
+          box-shadow: 0 3px 10px $grey
+          transform: translateY(-5px)
+.site-plan-box
+  width: 95%
+  height: 800px
+  margin: 0 auto
+  overflow: hidden
+  box-shadow: 0 2px 2px $grey
+  @include transition(.1s)
+  @include bp-small
+    height: 630px
+  &:hover
+    box-shadow: 0 3px 10px $grey
+    transform: translateY(-5px)
+  img
+    width: 100%
+    margin: 0 auto
+.ux-plan-tools
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: center
+  padding: 20px
+  width: 76%
+  margin: 50px auto 100px auto
+  h3
+    color: $dark-grey
+    padding: 28px
+  a
+    h3
+      color: $light-blue
+      @include transition(.1s)
+      &:hover
+        color: $orange
+.button-box
+  height: 150px
+  h2
+    color: $dark-grey
+    text-align: center

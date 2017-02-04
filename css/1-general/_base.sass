@@ -22,7 +22,7 @@ a
 
 .section-card
   background-color: $white
-  margin-bottom: 150px
+  margin-bottom: 100px
   box-shadow: 0 2px 6px $light-grey
   @include border-radius(10px)
 
@@ -37,5 +37,29 @@ a
   @include bp-medium
     // float: none
 
+button
+  padding: 12px 20px
+  @include font-size(18px)
+  line-height: 1
+  transform: translateY(-6px)
+  background-color: $light-orange
+  color: $off-white
+  border: none
+  cursor: pointer
+  letter-spacing: 1px
+  box-shadow: 0 1px 5px $dark-grey
+  margin: 0 6px
+  @include transition(.1s)
+  @include bp-small
+    @include font-size(14px)
+    line-height: 0.8
+  &:hover
+    background-color: $orange
+  &:focus
+    outline: none
+    box-shadow: 0 1px 5px $dark-grey
+  &:active
+    background-color: $dark-orange
+    box-shadow: none
 body
   background-color: $off-white

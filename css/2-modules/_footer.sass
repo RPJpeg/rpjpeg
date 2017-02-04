@@ -74,11 +74,47 @@ footer
   height: 60px
   background-color: $dark-blue
   margin: 0
+  position: relative
+  .back-to-top
+    background-color: $light-blue
+    border: 5px solid $dark-blue
+    width: 54px
+    height: 54px
+    position: absolute
+    float: left
+    top: -25px
+    left: 50%
+    transform: translateX(-27px)
+    @include transition(.1s)
+    @include border-radius(200px)
+    &:hover
+      transform: translate(-27px, -2px)
+      background-color: $lightest-blue
+    @include bp-small
+      width: 40px
+      height: 40px
+      border: 3px solid $dark-blue
+      transform: translateX(-20px)
+      top: -18px
+      &:hover
+        transform: translate(-20px, 0)
+    i
+      color: $dark-blue
+      transform: translate(5px, 1px)
+      @include transition(.1s)
+      @include font-size(34px)
+      @include bp-small
+        transform: translate(4px, 2px)
+        @include font-size(26px)
+
   p
     color: $lightest-blue
     float: left
     padding: 14px 0 0 12px
     @include transition(.1s)
+    @include font-size(14px)
+    @include bp-small
+      @include font-size(10px)
   a
     color: $lightest-blue
     @include transition(.1s)
@@ -86,11 +122,11 @@ footer
       color: $off-white
     &:active
       opacity: 0.6
-  .fa
-    padding: 14px 0 0 10px
-  .fa-arrow-up
-    transform: translateX(-10px)
-    padding-top: 10px
+  .fa-github, .fa-linkedin-square, .fa-file-pdf-o
+    padding: 10px 0 0 10px
+    @include font-size(28px)
+    @include bp-small
+      @include font-size(20px)
   ul
     float: right
     @include bp-small

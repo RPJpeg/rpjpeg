@@ -1,8 +1,8 @@
 .skills-main
   width: 100%
   background-color: $off-white
-  height: 350px
-  margin-bottom: 80px
+  height: 300px
+  margin-bottom: 0
   @include bp-small
     margin-bottom: 40px
   .skills-hero
@@ -11,11 +11,13 @@
     justify-content: center
     height: 350px
     .skills-box
-      width: 400px
+      width: 300px
       height: 160px
-      h1
+      h2
         color: $orange
         text-align: center
+        @include bp-small
+          padding: 12px
       h3
         color: $dark-grey
         text-align: center

@@ -1,0 +1,36 @@
+.ux-plan-main
+  width: 100%
+  background-color: $dark-blue
+  height: 450px
+  margin-bottom: 150px
+  box-shadow: 0 0 6px $dark-grey
+  background-image: url(../images/ux-mountain-header.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  z-index: 400
+  position: relative
+  @include bp-small
+    margin-bottom: 40px
+  .ux-plan-hero
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 350px
+    .ux-plan-box
+      width: 300px
+      height: 60px
+      h2
+        color: $white
+        text-align: center
+        margin-bottom: 0
+
+        @include bp-small
+          padding: 12px
+      h3
+        color: $lightest-orange
+        text-align: center
+.ux-plan-title
+  color: $orange
+  text-align: center
+  padding: 0 12px

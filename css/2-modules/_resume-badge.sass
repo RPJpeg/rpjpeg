@@ -1,0 +1,20 @@
+.resume-box
+  width: 150px
+  height: 150px
+  margin: 0 auto
+  border: 5px solid $light-orange
+  background-color: $white
+  padding: 32px
+  box-shadow: 0 2px 6px $dark-grey
+  @include border-radius(100px)
+  @include transition(.1s)
+  &:hover
+    transform: scale(1.08)
+    box-shadow: 0 2px 11px $dark-grey
+
+  img
+    width: 100%
+    height: auto
+.resume-title
+  color: $dark-grey
+  margin-bottom: 18px
