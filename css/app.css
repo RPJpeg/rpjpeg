@@ -719,6 +719,146 @@ section {
     color: #808080;
     text-align: center; }
 
+.resume-plan-main {
+  width: 100%;
+  background-color: #333c66;
+  height: 450px;
+  margin-bottom: 150px;
+  box-shadow: 0 0 6px #808080;
+  background-image: url(../images/resume-template-header.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 400;
+  position: relative; }
+  @media only screen and (max-width: 700px) {
+    .resume-plan-main {
+      margin-bottom: 40px; } }
+  .resume-plan-main .resume-plan-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px; }
+    .resume-plan-main .resume-plan-hero .resume-plan-box {
+      width: 400px;
+      height: 60px; }
+      .resume-plan-main .resume-plan-hero .resume-plan-box h2 {
+        color: #fcfcfc;
+        text-align: center;
+        margin-bottom: 0; }
+        @media only screen and (max-width: 700px) {
+          .resume-plan-main .resume-plan-hero .resume-plan-box h2 {
+            padding: 12px; } }
+      .resume-plan-main .resume-plan-hero .resume-plan-box h3 {
+        color: #faaf8a;
+        text-align: center; }
+
+.resume-plan-title {
+  color: #e67b45;
+  text-align: center;
+  padding: 0 12px; }
+
+.resume-plan-section {
+  width: 100%;
+  margin-bottom: 100px; }
+  .resume-plan-section .explanations {
+    margin-top: 50px; }
+    @media only screen and (max-width: 700px) {
+      .resume-plan-section .explanations {
+        margin-top: 40px; } }
+    .resume-plan-section .explanations:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .resume-plan-section .explanations .explain-left {
+      width: 50%;
+      float: left;
+      padding: 20px; }
+      @media only screen and (max-width: 700px) {
+        .resume-plan-section .explanations .explain-left {
+          float: none;
+          width: 100%; } }
+    .resume-plan-section .explanations .explain-right {
+      width: 50%;
+      float: right;
+      padding: 20px; }
+      @media only screen and (max-width: 700px) {
+        .resume-plan-section .explanations .explain-right {
+          float: none;
+          width: 100%; } }
+      .resume-plan-section .explanations .explain-right:after {
+        content: "";
+        display: table;
+        clear: both; }
+    .resume-plan-section .explanations p {
+      color: #808080;
+      padding-bottom: 50px;
+      text-align: justify; }
+    .resume-plan-section .explanations .img-container {
+      width: 95%;
+      margin: 0 auto; }
+      .resume-plan-section .explanations .img-container img {
+        width: 100%;
+        box-shadow: 0 2px 2px #b3b3b3;
+        margin-bottom: 46px;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+        -ms-transition: 0.1s;
+        -o-transition: 0.1s;
+        transition: 0.1s; }
+        .resume-plan-section .explanations .img-container img:hover {
+          box-shadow: 0 3px 10px #b3b3b3;
+          transform: translateY(-5px); }
+
+.site-plan-box {
+  width: 95%;
+  height: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 2px 2px #b3b3b3;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s; }
+  @media only screen and (max-width: 700px) {
+    .site-plan-box {
+      height: 630px; } }
+  .site-plan-box:hover {
+    box-shadow: 0 3px 10px #b3b3b3;
+    transform: translateY(-5px); }
+  .site-plan-box img {
+    width: 100%;
+    margin: 0 auto; }
+
+.resume-plan-tools {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  width: 76%;
+  margin: 50px auto 100px auto; }
+  .resume-plan-tools h3 {
+    color: #808080;
+    padding: 28px; }
+  .resume-plan-tools a h3 {
+    color: #8e94b3;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s; }
+    .resume-plan-tools a h3:hover {
+      color: #e67b45; }
+
+.button-box {
+  height: 150px; }
+  .button-box h2 {
+    color: #808080;
+    text-align: center; }
+
 footer {
   width: 100%;
   height: 465px;
